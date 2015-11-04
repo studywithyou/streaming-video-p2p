@@ -4,8 +4,7 @@
   "description": "Demo app for streaming video",
   "main": "index.js",
   "scripts": {
-    "start": "budo index.js:bundle.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "budo index.js --live"
   },
   "keywords": [
     "demo"
@@ -13,7 +12,13 @@
   "author": "Tran Cong",
   "license": "ISC",
   "dependencies": {
+    "budo": "^6.0.0",
     "express": "^4.13.3",
-    "simple-peer": "^5.11.5"
+    "simple-peer": "^5.11.5",
+    "watchify": "^3.6.0"
+  },
+  "devDependencies": {
+    "budo": "^6.0.0",
+    "watchify": "^3.6.0"
   }
 }
