@@ -4,7 +4,7 @@
   "description": "Demo app for streaming video",
   "main": "index.js",
   "scripts": {
-    "start": "budo index.js --live"
+    "start": "budo index.js:bundle.js"
   },
   "keywords": [
     "demo"
@@ -18,7 +18,7 @@
     "watchify": "^3.6.0"
   },
   "devDependencies": {
-    "budo": "^6.0.0",
+    "budo": "^6.0.3",
     "watchify": "^3.6.0"
   }
 }
