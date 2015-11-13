@@ -13,9 +13,17 @@
   "license": "ISC",
   "dependencies": {
     "budo": "^6.0.0",
+    "cookie-parser": "^1.4.0",
+    "csurf": "^1.8.3",
     "express": "^4.13.3",
+    "express-stormpath": "^2.2.0",
+    "forms": "^1.1.4",
+    "jade": "^1.11.0",
+    "jquery": "^2.1.4",
     "simple-peer": "^5.11.5",
-    "watchify": "^3.6.0"
+    "tipso": "^1.0.8",
+    "watchify": "^3.6.0",
+    "xtend": "^4.0.1"
   },
   "devDependencies": {
     "budo": "^6.0.3",
