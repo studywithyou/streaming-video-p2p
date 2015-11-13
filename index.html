@@ -11,20 +11,26 @@
   </nav>
   <body class="container">
     <div class="row">
-      <h2 style="text-align: center;background-color:#337AB7;color:#fff6de" >Streaming Video App</h2>
+      <div class="col-sm-12">
+      <h2 style="text-align: center;background-color:#337AB7;color:#fff6de;" >Streaming Video App</h2>
+      </div>
       <div class="col-sm-6">
         <div class="form-group">
         <label>Your ID:</label><br/>
-        <textarea id="yourId" class="form-control"></textarea><br/>
+        <textarea id="yourId" class="form-control"></textarea>
         <label>Other ID:</label><br/>
         <textarea id="otherId" class="form-control"></textarea>
-        <button id="connect" class="button">connect</button><br/>
+        <button id="connect" class="btn btn-primary" style="margin: 5px;">Connect</button><br/>
 
         <label>Enter Message:</label><br/>
         <textarea id="yourMessage" class="form-control"></textarea>
-        <button id="send" class="button">send</button>
-        <pre id="messages"></pre>
+        <button id="send" class="btn btn-primary" style="margin: 5px;">Send</button>
+        <pre id="messages" style="height: 200px;overflow: auto"></pre>
         </div>
+      </div>
+      <div class="col-sm-6">
+        <label >Video:</label><br/>
+        <div id="video"></div>
       </div>
     </div>
 

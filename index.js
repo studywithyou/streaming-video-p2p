@@ -26,14 +26,14 @@ navigator.webkitGetUserMedia({ video: false, audio: true }, function (stream) {
   peer.on('data', function (data) {
     document.getElementById('messages').textContent += "Friend: "+data + '\n';
   });
-  //
-  // peer.on('stream', function (stream) {
-  //   var video = document.createElement('video')
-  //   document.body.appendChild(video)
-  //
-  //   video.src = window.URL.createObjectURL(stream)
-  //   video.play()
-  // })
+
+   peer.on('stream', function (stream) {
+     var video = document.createElement('video')
+     document.getElementById('video').appendChild(video)
+
+     video.src = window.URL.createObjectURL(stream);
+     video.play()
+   })
 }, function (err) {
   console.error(err)
 });
